@@ -12,7 +12,7 @@ files=`find $path -name $regex`
 
 for file in $files
 do
-echo "Result of md5sum $file"
+# echo "Result of md5sum $file" This was unnecessary
 echo `md5sum "$file"`
 echo ""
 done
